@@ -4,12 +4,12 @@ body{
   background-color: grey;
   display: flex;
   flex-wrap: wrap;
-  background: url(images/drawer2.png);
+  background: url(drawer2.png);
     margin: auto;
 }
 
 img {
-	content: url(images/rectangle.jpg);
+	content: url(rectangle.jpg);
 	max-height: 100%;
 	max-width: 100%;
 	object-fit: contain; 
