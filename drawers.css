@@ -1,0 +1,59 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  background: url(images/drawer2.png);
+    margin: auto;
+}
+
+img {
+	content: url(images/rectangle.jpg);
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain; 
+}
+
+.drawer{
+  width: 900px;
+  height: 450px;
+  box-shadow: 0 0 0 1px #6c4116;
+  margin: 20px 20px 20px;
+  transition: .2s ease-out all;
+}
+
+.drawer:hover {
+  border-width: 0;
+  box-shadow: 0 0 0px 1px #6c4116, 0 3px 3px -2px #000, 0 10px 10px -4px #444;
+  transform: scale(1.05);
+  top: 1px;
+}
+
+.drawer:after {
+  left: 0;
+  top: 0;
+  opacity: .4;
+  z-index: 1;
+}
+
+@media only screen and (max-width : 320px) {
+	.drawer{
+		width: 280px;
+		height: 140px ;
+	}
+}
+
+@media only screen and (max-width : 360px) {
+	.drawer{
+		width: 320px;
+		height: 160px;
+	}
+}
+
+@media only screen and (max-width : 375px) {
+	.drawer{
+		width: 351.75px;
+		height: 175.875px;
+	}
+}
